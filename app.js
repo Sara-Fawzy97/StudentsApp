@@ -38,7 +38,7 @@ yargs.command({
 
         });
         argv.grades.push(total)
-            // console.log(data.gradesSum()) 
+            // argv.grades.push(data.gradesSum())
         data.addStudent(argv.id, argv.fname, argv.grades, argv.comment)
     }
 })

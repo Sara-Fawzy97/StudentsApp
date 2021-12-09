@@ -15,7 +15,7 @@ let addStudent = (id, fname, grades, comment) => {
             grades,
             comment
         });
-        // console.log(students.grades.values)
+
         saveStudents(students);
         console.log('saved successfully')
     } else {
@@ -78,21 +78,19 @@ let listStudents = () => {
 }
 
 // let gradesSum = () => {
-//     let total = 0;
+
 //     let students = loadStudents();
-//     // students.grades.forEach((grade) => {
-//     //         total += grade;
-//     //     })
-//     //     // return total;
-//     //     // for (let grade in grades) {
-//     //     //     total += grade;
-//     //     // }
+
 //     students.forEach(student => {
+//         let total = 0;
 //         for (let grade in student.grades) {
-//             total += grade
+//             total += student.grades[grade]
+
 //         }
-//         // return total
-//         console.log(student.grades[student.grades.length - 1])
+//         // students.grades.push(total)
+//         return total
+//             // console.log(total)
+
 //     })
 
 // }
